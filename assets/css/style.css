@@ -2,19 +2,59 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 @font-face {
-  font-family:'Roboto Condensed', sans-serif;
-  src: url(../fonts/RobotoCondensed-LightItalic.ttf);
+  font-family: "Roboto Condensed", sans-serif;
+  src: url("../fonts/RobotoCondensed-LightItalic.ttf");
 }
 
 @font-face {
-  font-family:'Roboto Condensed', sans-serif;
-  src: url(../fonts/RobotoCondensed-Regular.ttf);
+  font-family: "Roboto Condensed", sans-serif;
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
 }
 
 @font-face {
-  font-family:'Balqis', sans-serif;
-  src: url(../fonts/Balqis.ttf);
+  font-family: "Balqis";
+  src: url('../fonts/Balqis.woff'),
+       url('../fonts/Balqis.woff2');
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(../img/bg-header.jpg);
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+}
+
+.header-heading {
+  max-width: 1074px;
+  max-height: 264px;
+}
+
+.heading {
+  font-family: Balqis;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 250px;
+  line-height: 334px;
 }
