@@ -7,30 +7,39 @@
 }
 
 @font-face {
-  font-family: 'RobotoCondensed-LightItalic';
-  src: url("../fonts/RobotoCondensed-LightItalic.ttf");
+  font-family: RobotoCondensed-Light;
+  src: url("../fonts/RobotoCondensed-Light.woff"),
+       url("../fonts/RobotoCondensed-Light.woff2");
 }
 
 @font-face {
-  font-family: 'RobotoCondensed-Regular';
-  src: url("../fonts/RobotoCondensed-Regular.ttf");
+  font-family: "RobotoCondensed-LightItalic";
+  src: url("../fonts/RobotoCondensed-LightItalic.woff"),
+       url("../fonts/RobotoCondensed-LightItalic.woff2")
 }
 
 @font-face {
-  font-family: 'Balqis';
-  src: url('../fonts/Balqis.woff'),
-       url('../fonts/Balqis.woff2');
+  font-family: "RobotoCondensed-Regular";
+  src: url("../fonts/RobotoCondensed-Regular.woff"),
+       url("../fonts/RobotoCondensed-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Balqis";
+  src: url("../fonts/Balqis.woff"), url("../fonts/Balqis.woff2");
 }
 
 body {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .header {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
   height: 100vh;
   background-image: url(../img/bg-header.jpg);
 }
@@ -48,10 +57,8 @@ body {
 
 .navigation,
 .phone {
-  font-family: 'RobotoCondensed-Regular';
+  font-family: "RobotoCondensed-Regular";
   font-size: 24px;
-  color: #000000;
-  font-weight: 400;
 }
 
 .nav-item {
@@ -62,6 +69,10 @@ body {
   margin-left: 52px;
 }
 
+.nav-link {
+  color: #000000;
+}
+
 .nav-link:hover {
   text-decoration: underline;
 }
@@ -69,18 +80,19 @@ body {
 .phone {
   position: relative;
   padding-left: 40px;
+  color: #000000;
 }
 
 .phone::before {
   position: absolute;
   content: url(../svg/icons/phone-black.svg);
-  left:  0;
+  left: 0;
 }
 
 .heading {
   margin-top: 152px;
   text-align: center;
-  font-family: 'Balqis';
+  font-family: "Balqis";
   font-weight: 400;
   font-size: 250px;
 }
@@ -90,6 +102,71 @@ body {
   margin-top: -80px;
   text-align: right;
   font-size: 56px;
-  font-family: 'RobotoCondensed-LightItalic';
+  font-family: "RobotoCondensed-LightItalic";
   font-weight: 300;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+}
+
+.fairy-tail {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100wv;
+  height: 125px;
+  padding-left:100px;
+  margin-bottom: 437px;
+}
+
+.heading-fairy-tail {
+  display: block;
+  width: 50%;
+  font-size: 96px;
+  font-weight: 400;
+  font-family: Balqis;
+  margin-left: 328px;
+  color: #E2AB3F;
+}
+
+.heading-fairy-tail span {
+  display: block;
+  font-family: "RobotoCondensed-LightItalic";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  margin: -30px 0 60px 188px;
+  color: #000000;
+}
+
+.bg-fairy-tail {
+  width: 960px;
+  height: 700px;
+}
+
+.fairy-tail-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 300;
+  font-size: 18px;
+  width: 545px;
+  margin: 30px 0 0 55px;
+}
+
+.fairy-tail-text p {
+  font-family: "RobotoCondensed-Light";
+  font-weight:300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.fairy-tail-text p:nth-child(3) {
+  font-family:"RobotoCondensed-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
