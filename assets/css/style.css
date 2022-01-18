@@ -121,12 +121,12 @@ body {
 
 .fairy-tail {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding-left: 100px;
 }
 
 .sub-heading {
-  width: 50%;
+  width: 100%;
   font-size: 96px;
   font-weight: 400;
   font-family: Balqis;
@@ -145,8 +145,12 @@ body {
 }
 
 .bg-fairy-tail {
-  width: 960px;
-  height: 700px;
+  max-width: 960px;
+  max-height: 700px;
+}
+
+.fairy-tail-content {
+  display: flex;
 }
 
 .fairy-tail-text {
@@ -166,7 +170,7 @@ body {
   line-height: 21px;
 }
 
-.fairy-tail-text p:nth-child(3) {
+.fairy-tail-text p {
   font-family: "RobotoCondensed-Regular";
   font-style: normal;
   font-weight: 400;
@@ -219,7 +223,6 @@ body {
 
 .our-trip-content li:first-child {
   font-family: "RobotoCondensed-Regular";
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 21px;
@@ -321,4 +324,84 @@ body {
 .hotel-img2,
 .hotel-img4 {
   margin-left: 39px;
+}
+
+/* Price */
+
+.price {
+  position: relative;
+  max-width: 1305px;
+  margin: 200px 0 0 360px;
+}
+
+.price-heading {
+  font-size: 96px;
+  font-weight: 400;
+  font-family: Balqis;
+  color: #e2ab3f;
+}
+
+.price-heading span {
+  display: block;
+  font-family: "RobotoCondensed-LightItalic";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  color: #000000;
+  margin: -30px 0 100px 120px;
+}
+
+.price-top {
+  display: flex;
+  height: 550px;
+}
+
+.price-on {
+  max-width: 530px;
+  margin-right: 70px;
+}
+
+.menu-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+}
+
+.menu-list-price {
+  font-family: "RobotoCondensed-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.menu-price li:first-child {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 21px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.price-off {
+  height: 72%;
+}
+
+.price-img-ballonon-big {
+  position: absolute;
+  right: 0;
+  top: 160px;
+}
+
+.price-img-ballonon-small-1 {
+  position: absolute;
+  top: 322px;
+  right: 250px;
+}
+
+.price-img-ballonon-small-2 {
+  position: absolute;
+  top: 500px;
+  right: 165px;
 }
