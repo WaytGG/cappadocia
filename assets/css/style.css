@@ -412,7 +412,7 @@ body {
   margin: 0 0 0 130px;
 }
 
-.price-heading-bottom-bot  .span-heading {
+.price-heading-bottom-bot .span-heading {
   margin: -20px 0 0 122px;
   font-family: "RobotoCondensed-Light";
 }
@@ -437,11 +437,11 @@ body {
   height: 50px;
   margin-bottom: 20px;
   padding-left: 31px;
-  border: 1px solid #E2AB3F;
-  outline:none;
+  border: 1px solid #e2ab3f;
+  outline: none;
 }
 
-.form-name::placeholder ,
+.form-name::placeholder,
 .form-tel::placeholder {
   font-family: "RobotoCondensed-Light";
   font-style: normal;
@@ -455,4 +455,90 @@ body {
   height: 50px;
   padding: 5px 0 0 0;
   background-color: white;
+}
+
+.footer {
+  background-image: url(../img/bg-footer.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 1180px;
+  margin-top: 200px;
+  display: flex;
+}
+
+.footer-contacts {
+  display: flex;
+  position: relative;
+  margin: 96px 0 0 476px;
+  max-width: 356px;
+  max-height: 527px;
+}
+
+.contacts-heading {
+  position: absolute;
+  font-size: 86px;
+  color: #e2ab3f;
+  font-weight: 400;
+  font-family: "Balqis";
+  margin: 71px 40px 0 43px;
+}
+
+.contacts-phone {
+  position: absolute;
+  margin: 206px 0 0 70px;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "RobotoCondensed-Light";
+}
+
+.phone::before {
+  content: url(/assets/svg/icons/phone-footer.svg);
+  top: -3px;
+}
+
+.contacts-email {
+  position: absolute;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 300;
+  top: 251px;
+  left: 81px;
+  font-family: "RobotoCondensed-Light";
+}
+
+.contacts-email::before {
+  position: absolute;
+  content: url(/assets/svg/icons/mail-footer.svg);
+  left: -40px;
+  top: -3px;
+}
+
+.contaacts-youtube, 
+.contaacts-facebook,
+.contaacts-instagram {
+  position: absolute;
+  top: 310px;
+}
+
+.contaacts-youtube {
+  left: 120px;
+}
+
+.contaacts-facebook {
+  left: 165px;
+}
+
+.contaacts-instagram {
+  left: 210px;
+}
+
+.footer-paragraph {
+  max-width: 595px;
+  max-height: 110px;
+  font-weight: 400;
+  font-size: 86px;
+  font-family: "Balqis";
+  margin: 311px 0 0 139px;
 }
